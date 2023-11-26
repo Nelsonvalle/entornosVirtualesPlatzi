@@ -2,7 +2,8 @@
 
 Para correr el juego dentro de la carpeta GAME:
 
-´´´sh
+```sh
 cd game
 python main.py
-´´´
+```
+
