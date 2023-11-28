@@ -39,12 +39,12 @@ def population_by_country(data, country):
 
 
 
-def charts_bar(labels,values):
-    fig,ax = plt.subplots()
-    ax.bar(labels,values)
-    plt.savefig('bar.png')
-    plt.close()
-    
+def generate_bar_chart(name, labels, values):
+  fig, ax = plt.subplots()
+  ax.bar(labels, values)
+  plt.savefig(f'./imgs/{name}.png')
+  plt.close()
+  
     
 def charts_pie(labels,values):
     fig,ax = plt.subplots()

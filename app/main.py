@@ -1,4 +1,4 @@
-from funciones import charts_bar,charts_pie
+from funciones import generate_bar_chart,charts_pie
 from funciones import reader_csv
 from funciones import get_population
 from funciones import population_by_country
@@ -21,7 +21,7 @@ def run():
     if len(result) > 0:
         country = result[0]
         labels, values = get_population(country)
-        charts_bar(labels,values)
+        generate_bar_chart(country,labels,values)
         
 
 if __name__ == '__main__':
